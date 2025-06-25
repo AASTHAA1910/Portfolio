@@ -3,78 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Aastha | Portfolio </title>
+  <title>Aastha | Designer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Content -->
   <header>
-    <div class="container">
-      <h1>Aastha Dhangar</h1>
-      <p> Web Developer | MCA Student | Creator </p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="nav-content">
+      <h2>AASTHA DHANGAR</h2>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Connect</a></li>
+      </ul>
     </div>
   </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am an enthusiastic student with a passion for programming and web development.I am Proficient in C, C++, Python, and web technologies (HTML, CSS, JavaScript). An Eager learner seeking opportunities in the programming field to enhance skills and work on engaging web projects.I am motivated by challenges, aiming to create visually appealing websites using web technologies.I am committed to continuous growth, contributing to the digital landscape with impactful online solutions.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A personal website to showcase my skills and projects using HTML, CSS, and JavaScript.</p>
+  <main>
+    <section >
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="./Img/Profile Pic.jpg" alt="">
         </div>
-        <div class="project-card">
-          <h3>To-Do List App</h3>
-          <p>A simple task management app using JavaScript.</p>
-        </div>
-        <div class="project-card">
-          <h3>Wedding-Management Website</h3>
-          <p> A simple event management website named Made In Heaven , where we can book wedding packages which includes photographer, decoration and many more </p>
-        </div>
-        <div class="project-card">
-          <h3>Tic-Tac-toe game</h3>
-          <p>This java project implements the classic game of Tic-Tac-Toe. Two players take turns marking spaces on a 3X3 grid.</p>
-        </div>
-        <div class="project-card">
-          <h3>Quiz-generator website </h3>
-          <p>This python project allows the user to generate a quiz and answer the following quiz. 
+        <div class="profile-text">
+          <h1>Aastha Dhangar</h1>
+          <p>Web Developer | MCA Student | Creator</p>
+          <button class="btn">Explore</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="form-message"></p>
-    </div>
-  </section>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate designer who blends creativity and functionality into every project.
+          Skilled in visual design, UI/UX principles, and web technologies including HTML, CSS, and JavaScript.
+          I love building beautiful, intuitive experiences that leave an impact. I'm always eager to explore innovative design trends and contribute meaningfully to digital storytelling.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Design Work</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>A sleek portfolio site to showcase my work and identity, built using modern web standards.</p>
+          </div>
+          <div class="project-card">
+            <h3>Creative To-Do App</h3>
+            <p>A minimalist productivity tool with a designer-friendly interface.</p>
+          </div>
+          <div class="project-card">
+            <h3>Wedding Brand Website</h3>
+            <p>Aesthetic and elegant website for a wedding planning service named "Made In Heaven".</p>
+          </div>
+          <div class="project-card">
+            <h3>Interactive Game UI</h3>
+            <p>Designed a playful interface for a Java-based Tic-Tac-Toe game with modern visuals.</p>
+          </div>
+          <div class="project-card">
+            <h3>Quiz Generator UX</h3>
+            <p>Designed user-centric flows and styling for a quiz-generating web app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+      </div>
+    </section>
+  
+  </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Aastha Dhangar | All rights reserved</p>
+      <p>&copy; 2025 Aastha Dhangar | Crafted with love & design</p>
     </div>
   </footer>
 
