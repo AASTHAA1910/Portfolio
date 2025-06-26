@@ -1,3 +1,10 @@
+const { url } = require("inspector");
+
+// About functionality
+function about() {
+    window.location.href=url('#about');
+}
+
 // Active Link Functionality...
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".sidebar-nav ul li a");
@@ -47,3 +54,35 @@ links.forEach(link => {
 window.onload = () => {
     showSection('#home');
 };
+
+// Contact Form Functionality...
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Make a POST request to your server for form submission
+        fetch('/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.success) {
+                alert('Message Submitted Successfully!');
+                form.reset();
+            } else {
+                alert('Error: ' + data.message);
+            }
+        })
+        .catch((error) => console.error('Error:', error));
+    });
+});

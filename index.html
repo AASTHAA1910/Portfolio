@@ -38,7 +38,7 @@
         <div class="profile-text">
           <h1>Aastha Dhangar</h1>
           <p>Web Developer | MCA Student | Creator</p>
-          <button class="btn" onclick=`window.location.href='#about'`>Explore</button>
+          <button class="btn" onclick='about()'>Explore</button>
         </div>
       </div>
     </section>
@@ -160,10 +160,10 @@
         
         <div class="contact-content">
           <div class="contactForm">
-            <form id="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" required></textarea>
+            <form action="/contact" id="contactForm" method="post">
+              <input type="text" placeholder="Your Name" id="name" required />
+              <input type="email" placeholder="Your Email" id="email" required />
+              <textarea placeholder="Your Message" id="message" required></textarea>
               <button type="submit">Send Message</button>
             </form>
           </div>
