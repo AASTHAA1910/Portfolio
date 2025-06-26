@@ -31,15 +31,16 @@ function showSection(id) {
     });
     const target = document.querySelector(id);
     if (target) target.classList.add('active-section');
+
+    // Update active nav link
+    links.forEach(l => l.classList.remove('active'));
+    document.querySelector(`.sidebar-nav a[href="${id}"]`)?.classList.add('active');
 }
 
 links.forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
-        links.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-        const targetId = this.getAttribute('href');
-        showSection(targetId);
+        showSection(this.getAttribute('href'));
     });
 });
 
