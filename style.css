@@ -10,6 +10,7 @@ body {
   color: #ffd1d1;
   background-color: #3f0101e8;
   line-height: 1.6;
+  overflow: hidden;
 }
 
 .container {
@@ -98,6 +99,21 @@ main {
   margin-left: 230px;
   background-color: rgb(255, 209, 209);
   color: #3f0101;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section, .dashboard {
+  display: none;
+  height: 100vh;
+  overflow: auto;
+  padding-left: 240px;
+  padding-right: 20px;
+}
+
+.section.active-section,
+.dashboard.active-section {
+  display: block;
 }
 
 /* Dashboard Section */
