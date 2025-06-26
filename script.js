@@ -1,10 +1,3 @@
-const { url } = require("inspector");
-
-// About functionality
-function about() {
-    window.location.href=url('#about');
-}
-
 // Active Link Functionality...
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".sidebar-nav ul li a");
