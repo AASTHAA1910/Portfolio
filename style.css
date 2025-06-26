@@ -286,6 +286,10 @@ main {
   transform: scale(1.02);
 }
 
+.project-card h3 {
+  text-align: center;
+}
+
 /* Contact */
 form {
   display: flex;
