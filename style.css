@@ -291,6 +291,20 @@ main {
 }
 
 /* Contact */
+.contact-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactForm, .connection {
+  flex: 1 1 450px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 127, 127, 0.3);
+  margin: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -322,6 +336,29 @@ form button {
 
 form button:hover {
   background-color: #a52a2a;
+}
+
+.connection h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.connection p {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.connection p i {
+  padding-right: 15px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    color: #331d1d;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 /* Footer */
