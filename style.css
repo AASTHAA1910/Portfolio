@@ -20,75 +20,108 @@ body {
 }
 
 /* Header */
-header {
-  background-color: #3e0202d5;
-  color: #fff;
-  padding: 20px 0;
-  border-bottom: 5px solid #3f0101e8;
-  display: flex;
+.sidebar {
+  position: fixed;
   top: 0;
-  position: sticky;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background-color: #3f0101;
+  color: white;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 1000;
+  justify-content: center;
 }
 
-.nav-content {
-  flex: 50%;
-  padding-left: 10%;
+.logo {
+  margin-top: -20%;
 }
 
-.nav-content h2 {
-  font-size: 1.5rem;
+.logo h2 {
+  font-size: 1.8rem;
+  color: #ffd7b5;
+  cursor: pointer;
 }
 
-.nav {
-  flex: 50%;
-  padding-top: 8px;
+.sidebar-nav {
+  justify-content: center;
+  margin-top: 15%;
 }
 
-.nav ul {
+.sidebar-nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 0;
+  width: 100%;
+  align-items: center;
 }
 
-.nav a {
-  color: #fff;
+.sidebar-nav ul li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.sidebar-nav ul li a {
   text-decoration: none;
-  font-size: 1.1rem;
+  color: #ffd1d1;
   font-weight: 600;
-  transition: color 0.3s;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  transition: background 0.3s, color 0.3s;
 }
 
-.nav a:hover {
-  color: #ffd7b5;
+.sidebar-nav ul li a:hover {
+  background-color: #a52a2a;
+  color: white;
+  width: 100%;
+}
+
+.sidebar-nav ul li a.active {
+  background-color: #ffd1d1;
+  color: #3f0101;
+  border-radius: 5px;
+}
+
+.sidebar-nav i {
+  margin-right: 8px;
 }
 
 /* Main */
 main {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 230px;
   background-color: rgb(255, 209, 209);
   color: #3f0101;
 }
 
-/* Profile Section */
-.home {
-  height: 700px;
+/* Dashboard Section */
+.dashboard {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(180deg, rgba(255, 153, 153, 0.5), rgba(255, 209, 209, 0.9)), url('./Img/bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
 
 .profile {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  align-items: center;
 }
 
 .profile-pic {
   flex: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-pic img {
@@ -96,7 +129,8 @@ main {
   height: 450px;
   border-radius: 50%;
   margin-left: 20%;
-  margin-top: 15%;
+  margin-top: 20%;
+  border: 2px solid #3f0101;
 }
 
 .profile-text {
@@ -277,4 +311,5 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
+  margin-left: 230px;
 }
