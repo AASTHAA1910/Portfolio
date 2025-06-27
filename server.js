@@ -5,13 +5,13 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // MySQL Database Connection
 const db = mysql.createConnection({
     host: process.env.DB_HOST || "localhost",
     user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "Snkumar30",
+    password: process.env.DB_PASSWORD || "Aastha2002",
     database: process.env.DB_NAME || "aastha_db",
 });
 
